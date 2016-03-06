@@ -15,7 +15,15 @@ public class UserNameValidationTest
 	}
 
 	@Test
-	public void test() 
+	public void testSuccess() 
+	{
+		assertTrue(UserNameValidation.isUsernameValid("Rajshekhar"));
+		assertTrue(UserNameValidation.isUsernameValid("AnilBudharam"));
+		assertTrue(UserNameValidation.isUsernameValid("rajesh"));
+	}
+
+	@Test
+	public void testFailure() 
 	{
 		assertFalse(UserNameValidation.isUsernameValid(";"));
 		assertFalse(UserNameValidation.isUsernameValid("%"));
