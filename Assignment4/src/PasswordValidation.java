@@ -5,7 +5,7 @@ public class PasswordValidation
 {
 
 	String ignoreSpecial = "_,.,-";
-	private static Pattern passwordRegularExpression =Pattern.compile("^[a-zA-Z0-9]{8,}[/,.~`|-]+$");
+	private static Pattern passwordRegularExpression =Pattern.compile("^[a-zA-Z0-9/,.~`|-]{8}+$");
 
 	public static boolean isPasswordValid(String password) 
 	{
